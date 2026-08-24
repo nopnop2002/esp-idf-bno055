@@ -15,7 +15,7 @@ You can view like this.
 	In Fusion NDOF mode, calibration data for the accelerometer, gyroscope, and magnetic sensor can be automatically acquired.   
 	The sensor calibration values are written to NVS.   
 
-- Get Euler angles from IMU.
+- Get Euler angles from IMU.   
 	The sensor calibration values are read from NVS.   
 
 - Display Euler angles in browser.
@@ -44,8 +44,8 @@ To use the I2C interface, it is necessary to short-circuit certain parts of the 
 (*1)You can change it to any pin using menuconfig.   
 
 (*2)Choosing an i2c address.   
-3.3V:i2c address is 0x28.   
 GND:i2c address is 0x28.   
+3.3V:i2c address is 0x29.   
 
 (*3)It may be marked as I2C or COM3.   
 
@@ -53,15 +53,15 @@ GND:i2c address is 0x28.
 We can find the sensor using [i2c-tools](https://github.com/espressif/esp-idf/tree/master/examples/peripherals/i2c/i2c_tools).   
 
 - Select SCL and SDA using menuconfig.   
-<img width="659" height="486" alt="Image" src="https://github.com/user-attachments/assets/48f0c1c3-616d-4399-95bc-3940935ee7ea" />
+	<img width="659" height="486" alt="Image" src="https://github.com/user-attachments/assets/48f0c1c3-616d-4399-95bc-3940935ee7ea" />
 
 - Detect senser.   
-The i2c address for this sensor is 0x28 or 0x29.   
-<img width="659" height="486" alt="Image" src="https://github.com/user-attachments/assets/5e4f9fc1-80e7-44a3-8d98-a141bb6f3e7d" />
+	The i2c address for this sensor is 0x28 or 0x29.   
+	<img width="659" height="486" alt="Image" src="https://github.com/user-attachments/assets/5e4f9fc1-80e7-44a3-8d98-a141bb6f3e7d" />
 
 - Read register.   
-Register #0x28 for this sensor is 0xA0.   
-<img width="659" height="486" alt="Image" src="https://github.com/user-attachments/assets/00742055-e23c-4013-b349-38c60044dc19" />
+	Register #0x28 for this sensor is 0xA0.   
+	<img width="659" height="486" alt="Image" src="https://github.com/user-attachments/assets/00742055-e23c-4013-b349-38c60044dc19" />
 
 
 # Perform a calibration of your sensor
@@ -93,9 +93,10 @@ idf.py flash
 ### About Calib Status   
 From the left: Accelerometer Calib status, Gyroscope Calib status, Magnetometer Calib status, System Calib status.   
 For Calib Status, 3 indicates completion.   
-At this point, only the Gyroscope Calib status indicates completion.   
+"0 3 0 0" indicates that only the gyroscope calibration is complete.   
 <img width="659" height="486" alt="Image" src="https://github.com/user-attachments/assets/d55f0544-4f48-4bbe-8294-3693c33b3317" />
 
+"3 3 3 3" indicates that all calibrations have been completed.   
 Once all calibration is complete, the offset value is displayed.   
 The offset value is written to NVS.   
 <img width="659" height="486" alt="Image" src="https://github.com/user-attachments/assets/3216a025-af47-48d1-b2da-6617c52a8e63" />
