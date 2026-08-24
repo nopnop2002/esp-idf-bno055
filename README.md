@@ -37,8 +37,8 @@ To use the I2C interface, it is necessary to short-circuit certain parts of the 
 |:-:|:-:|:-:|:-:|:-:|:-:|
 |VCC|--|3.3V|3.3V|3.3V||
 |GND|--|GND|GND|GND||
-|SCL|--|GPIO22|GPIO12|GPIO5|(*1)|
-|SDA|--|GPIO21|GPIO11|GPIO4|(*1)|
+|SCL/Rx|--|GPIO22|GPIO12|GPIO5|(*1)|
+|SDA/Tx|--|GPIO21|GPIO11|GPIO4|(*1)|
 |ADO(*3)|--|GND/3.3V|GND/3.3V|GND/3.3V|(*2)|
 
 (*1)You can change it to any pin using menuconfig.   
