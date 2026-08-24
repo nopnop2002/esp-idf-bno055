@@ -60,7 +60,7 @@ We can find the sensor using [i2c-tools](https://github.com/espressif/esp-idf/tr
 	<img width="659" height="486" alt="Image" src="https://github.com/user-attachments/assets/5e4f9fc1-80e7-44a3-8d98-a141bb6f3e7d" />
 
 - Read register.   
-	Register #0x28 for this sensor is 0xA0.   
+	Register #0 for this sensor is 0xA0.   
 	<img width="659" height="486" alt="Image" src="https://github.com/user-attachments/assets/00742055-e23c-4013-b349-38c60044dc19" />
 
 
