@@ -17,7 +17,7 @@ The BNO055 provides a variety of output signals, which can be chosen by selectin
 			<td>Absolute orientation</td>
 		</tr>
 		<tr>
-			<td>Non Fusion Mode</td>
+			<td rowspan=8">Non Fusion Mode</td>
 			<td>CONFIGMODE</td>
 			<td align="center">-</td>
 			<td align="center">-</td>
@@ -26,7 +26,6 @@ The BNO055 provides a variety of output signals, which can be chosen by selectin
 			<td align="center">-</td>
 		</tr>
 		<tr>
-			<td>Non Fusion Mode</td>
 			<td>ACCONLY</td>
 			<td align="center">X</td>
 			<td align="center">-</td>
@@ -35,7 +34,6 @@ The BNO055 provides a variety of output signals, which can be chosen by selectin
 			<td align="center">-</td>
 		</tr>
 		<tr>
-			<td>Non Fusion Mode</td>
 			<td>MAGONLY</td>
 			<td align="center">-</td>
 			<td align="center">X</td>
@@ -44,7 +42,6 @@ The BNO055 provides a variety of output signals, which can be chosen by selectin
 			<td align="center">-</td>
 		</tr>
 		<tr>
-			<td>Non Fusion Mode</td>
 			<td>GYROONLY</td>
 			<td align="center">-</td>
 			<td align="center">-</td>
@@ -53,7 +50,6 @@ The BNO055 provides a variety of output signals, which can be chosen by selectin
 			<td align="center">-</td>
 		</tr>
 		<tr>
-			<td>Non Fusion Mode</td>
 			<td>ACCMAG</td>
 			<td align="center">X</td>
 			<td align="center">X</td>
@@ -62,7 +58,6 @@ The BNO055 provides a variety of output signals, which can be chosen by selectin
 			<td align="center">-</td>
 		</tr>
 		<tr>
-			<td>Non Fusion Mode</td>
 			<td>ACCGYRO</td>
 			<td align="center">X</td>
 			<td align="center">-</td>
@@ -71,7 +66,6 @@ The BNO055 provides a variety of output signals, which can be chosen by selectin
 			<td align="center">-</td>
 		</tr>
 		<tr>
-			<td>Non Fusion Mode</td>
 			<td>MAGGYRO</td>
 			<td align="center">-</td>
 			<td align="center">X</td>
@@ -80,7 +74,6 @@ The BNO055 provides a variety of output signals, which can be chosen by selectin
 			<td align="center">-</td>
 		</tr>
 		<tr>
-			<td>Non Fusion Mode</td>
 			<td>AMG</td>
 			<td align="center">X</td>
 			<td align="center">X</td>
@@ -89,7 +82,7 @@ The BNO055 provides a variety of output signals, which can be chosen by selectin
 			<td align="center">-</td>
 		</tr>
 		<tr>
-			<td>Fusion Mode</td>
+			<td rowspan=5">Fusion Mode</td>
 			<td>IMU</td>
 			<td align="center">X</td>
 			<td align="center">-</td>
@@ -98,7 +91,6 @@ The BNO055 provides a variety of output signals, which can be chosen by selectin
 			<td align="center">-</td>
 		</tr>
 		<tr>
-			<td>Fusion Mode</td>
 			<td>COMPASS</td>
 			<td align="center">X</td>
 			<td align="center">X</td>
@@ -107,7 +99,6 @@ The BNO055 provides a variety of output signals, which can be chosen by selectin
 			<td align="center">X</td>
 		</tr>
 		<tr>
-			<td>Fusion Mode</td>
 			<td>M4G</td>
 			<td align="center">X</td>
 			<td align="center">X</td>
@@ -116,7 +107,6 @@ The BNO055 provides a variety of output signals, which can be chosen by selectin
 			<td align="center">-</td>
 		</tr>
 		<tr>
-			<td>Fusion Mode</td>
 			<td>NDOF_FMC_OFF</td>
 			<td align="center">X</td>
 			<td align="center">X</td>
@@ -125,7 +115,6 @@ The BNO055 provides a variety of output signals, which can be chosen by selectin
 			<td align="center">X</td>
 		</tr>
 		<tr>
-			<td>Fusion Mode</td>
 			<td>NDOF</td>
 			<td align="center">X</td>
 			<td align="center">X</td>
