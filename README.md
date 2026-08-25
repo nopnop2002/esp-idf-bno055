@@ -5,7 +5,7 @@ The BNO055 provides a variety of output signals, which can be chosen by selectin
 <table>
 	<tbody>
 		<tr>
-			<td colspan="2" rowspan="2">Operating Mode</td>
+			<td colspan="2" rowspan="2" align="center">Operating Mode</td>
 			<td colspan="3">Available sensor signals</td>
 			<td colspan="2" align="center">Fusion Data</td>
 		</tr>
