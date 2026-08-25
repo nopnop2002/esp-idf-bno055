@@ -125,6 +125,10 @@ The BNO055 provides a variety of output signals, which can be chosen by selectin
 	</tbody>
 </table>
 
+The Fusion NDOF mode is a fusion mode with 9 degrees of freedom where the fused absolute orientation data is calculated from accelerometer, gyroscope and the magnetometer.   
+The advantages of combining all three sensors are a fast calculation, resulting in high output data rate, and high robustness from magnetic field distortions.   
+In this mode the Fast Magnetometer calibration is turned ON and thereby resulting in quick calibration of the magnetometer and higher output data accuracy.
+
 In Fusion NDOF mode, in addition to accelerometer, magnetometer, and gyroscope data, Euler angles can be output.   
 Euler angles are roll, pitch and yaw.   
 It's very intuitive and easy to understand.   
