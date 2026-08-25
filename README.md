@@ -2,6 +2,140 @@
 A demo showing the pose of the BNO055 9DoF IMU sensor in 3D using esp-idf.
 
 The BNO055 provides a variety of output signals, which can be chosen by selecting the appropriate operation mode.   
+<table>
+	<tbody>
+		<tr>
+			<td colspan="2" rowspan="2">Operating Mode</td>
+			<td colspan="3">Available sensor signals</td>
+			<td colspan="2" align="center">Fusion Data</td>
+		</tr>
+		<tr>
+			<td align="center">Accel</td>
+			<td align="center">Mag</td>
+			<td align="center">Gyro</td>
+			<td>Relative orientation</td>
+			<td>Absolute orientation</td>
+		</tr>
+		<tr>
+			<td>Non Fusion Mode</td>
+			<td>CONFIGMODE</td>
+			<td align="center">-</td>
+			<td align="center">-</td>
+			<td align="center">-</td>
+			<td align="center">-</td>
+			<td align="center">-</td>
+		</tr>
+		<tr>
+			<td>Non Fusion Mode</td>
+			<td>ACCONLY</td>
+			<td align="center">X</td>
+			<td align="center">-</td>
+			<td align="center">-</td>
+			<td align="center">-</td>
+			<td align="center">-</td>
+		</tr>
+		<tr>
+			<td>Non Fusion Mode</td>
+			<td>MAGONLY</td>
+			<td align="center">-</td>
+			<td align="center">X</td>
+			<td align="center">-</td>
+			<td align="center">-</td>
+			<td align="center">-</td>
+		</tr>
+		<tr>
+			<td>Non Fusion Mode</td>
+			<td>GYROONLY</td>
+			<td align="center">-</td>
+			<td align="center">-</td>
+			<td align="center">X</td>
+			<td align="center">-</td>
+			<td align="center">-</td>
+		</tr>
+		<tr>
+			<td>Non Fusion Mode</td>
+			<td>ACCMAG</td>
+			<td align="center">X</td>
+			<td align="center">X</td>
+			<td align="center">-</td>
+			<td align="center">-</td>
+			<td align="center">-</td>
+		</tr>
+		<tr>
+			<td>Non Fusion Mode</td>
+			<td>ACCGYRO</td>
+			<td align="center">X</td>
+			<td align="center">-</td>
+			<td align="center">X</td>
+			<td align="center">-</td>
+			<td align="center">-</td>
+		</tr>
+		<tr>
+			<td>Non Fusion Mode</td>
+			<td>MAGGYRO</td>
+			<td align="center">-</td>
+			<td align="center">X</td>
+			<td align="center">X</td>
+			<td align="center">-</td>
+			<td align="center">-</td>
+		</tr>
+		<tr>
+			<td>Non Fusion Mode</td>
+			<td>AMG</td>
+			<td align="center">X</td>
+			<td align="center">X</td>
+			<td align="center">X</td>
+			<td align="center">-</td>
+			<td align="center">-</td>
+		</tr>
+		<tr>
+			<td>Fusion Mode</td>
+			<td>IMU</td>
+			<td align="center">X</td>
+			<td align="center">-</td>
+			<td align="center">X</td>
+			<td align="center">X</td>
+			<td align="center">-</td>
+		</tr>
+		<tr>
+			<td>Fusion Mode</td>
+			<td>COMPASS</td>
+			<td align="center">X</td>
+			<td align="center">X</td>
+			<td align="center">-</td>
+			<td align="center">-</td>
+			<td align="center">X</td>
+		</tr>
+		<tr>
+			<td>Fusion Mode</td>
+			<td>M4G</td>
+			<td align="center">X</td>
+			<td align="center">X</td>
+			<td align="center">-</td>
+			<td align="center">X</td>
+			<td align="center">-</td>
+		</tr>
+		<tr>
+			<td>Fusion Mode</td>
+			<td>NDOF_FMC_OFF</td>
+			<td align="center">X</td>
+			<td align="center">X</td>
+			<td align="center">X</td>
+			<td align="center">-</td>
+			<td align="center">X</td>
+		</tr>
+		<tr>
+			<td>Fusion Mode</td>
+			<td>NDOF</td>
+			<td align="center">X</td>
+			<td align="center">X</td>
+			<td align="center">X</td>
+			<td align="center">-</td>
+			<td align="center">X</td>
+		</tr>
+	</tbody>
+</table>
+
 In Fusion NDOF mode, in addition to accelerometer, magnetometer, and gyroscope data, Euler angles can be output.   
 Euler angles are roll, pitch and yaw.   
 It's very intuitive and easy to understand.   
